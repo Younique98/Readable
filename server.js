@@ -13,7 +13,8 @@ const app = express()
 const authors = [
 	{ id: 1, name: 'Judy Blume' },
 	{ id: 2, name: 'Eric Carle' },
-	{ id: 3, name: 'Yangsook Choi' }
+	{ id: 3, name: 'Yangsook Choi' },
+	{ id: 4, name: 'Christopher Paul Curtis' }
 ]
 
 const books = [
@@ -24,7 +25,9 @@ const books = [
 	{ id: 5, name: '1, 2, 3 To the Zoo', authorId: 2 },
 	{ id: 6, name: 'The Very Hungry Caterpillar', authorId: 2 },
 	{ id: 7, name: 'The Name Jar', authorId: 3 },
-	{ id: 8, name: 'This Next New Year', authorId: 3 }
+	{ id: 8, name: 'Bud Not Buddy', authorId: 4 },
+	{ id: 8, name: 'The Watsons Go to Birmingham 1963', authorId: 4 },
+	{ id: 8, name: 'Elijah of Buxton', authorId: 4 }
 ]
 
 const BookType = new GraphQLObjectType({
